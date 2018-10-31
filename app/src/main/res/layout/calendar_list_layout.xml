@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/list_all_lly"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!--<include layout="@layout/activity_calendar_merge" />-->
+
+
+
+    <com.example.shuaijia.xzcalendarview.tableLayout.SlidingTabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#ffffff"
+        app:tl_divider_color="#ffffff"
+        app:tl_indicator_color="#2f64ea"
+        app:tl_indicator_height="3dp"
+        app:tl_indicator_width="60dp"
+        app:tl_tab_space_equal="true"
+        app:tl_underline_color="#00000000"
+        app:tl_underline_height="3dp" />
+
+
+    <com.example.shuaijia.xzcalendarview.calendar.list.CalendarListViewPager
+        android:id="@+id/collection_view_pager"
+        android:layout_width="match_parent"
+        android:background="#f4f5fa"
+        android:layout_height="match_parent" />
+</LinearLayout>

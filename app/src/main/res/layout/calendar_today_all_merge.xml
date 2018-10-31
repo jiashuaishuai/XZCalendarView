@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/today_all_lly"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/month_view_pager"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingBottom="10dp"
+    android:paddingTop="5dp">
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:layout_width="6dp"
+        android:layout_height="6dp"
+        android:layout_marginRight="3dp"
+        android:background="@drawable/collection_shap_yelloy" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="回款日"
+        android:textSize="11sp" />
+
+    <LinearLayout
+        android:id="@+id/click_today_lly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/collection_shap_read_frame"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp">
+
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="今天"
+            android:textSize="11sp" />
+    </LinearLayout>
+</LinearLayout>

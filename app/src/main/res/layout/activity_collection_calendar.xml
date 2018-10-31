@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.example.shuaijia.xzcalendarview.calendar.ScheduleLayout
+        android:id="@+id/calendar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/calendar_total_lly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View style="@style/horizontal_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.example.shuaijia.xzcalendarview.tableLayout.CalendarSlidingTabLayout
+                    android:id="@+id/calendar_tab_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp" />
+
+                <com.example.shuaijia.xzcalendarview.calendar.WeekBarView
+                    android:id="@+id/week_bar_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.example.shuaijia.xzcalendarview.calendar.weekView.WeekViewPager
+                    android:id="@+id/week_view_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:overScrollMode="never" />
+
+                <RelativeLayout
+                    android:id="@+id/month_view_lly"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.example.shuaijia.xzcalendarview.calendar.MonthViewpager
+                        android:id="@+id/month_view_pager"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:overScrollMode="never" />
+
+                    <include layout="@layout/calendar_today_all_merge" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <include layout="@layout/calendar_list_layout" />
+        </LinearLayout>
+    </com.example.shuaijia.xzcalendarview.calendar.ScheduleLayout>
+</LinearLayout>
